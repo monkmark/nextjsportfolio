@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="relative w-screen h-screen overflow-x-scroll hide-scrollbar"> 
-      <header className="flex w-screen h-auto justify-around relative text-base ">
+      <header className="p-1 flex w-screen h-auto justify-around relative text-base ">
         <section className="banner w-1/2 h-auto">
           <h3 className="relative top-1 left-1/64">Marcus Parchman</h3>
         </section>
@@ -13,21 +13,29 @@ export default function Home() {
         </ul>
       </header>
       <main className="w-screen h-screen flex">
-        <section className="rightbx relative w-[50vw] h-screen">
-          <div className="relative w-full h-auto">
-            <p className="text-3xl relative top-1/32 left-1/64">Hi, I'm Marcus!</p>
-            <p className="text-2xl relative top-1/32 left-1/64">I'm a Software Engineer major at Western Governors University</p>
+        <section className="leftbx relative w-[50vw] h-screen">
+          <div className="relative w-[50vw] h-auto p-2">
+            <p className="text-3xl relative">Hi, I'm Marcus!</p>
+            <p className="text-2xl relative">I'm a Software Engineer major at Western Governors University</p>
           </div>
-          <div className="relative w-full h-auto" >
+          <div className="relative w-[50vw] h-auto p-2">
+            <p>I Specialize in Design & Developing software products. Anywhere from fullstack web platforms to object-oriented applications. Feel free to check out my work alongside!</p>
+          </div>
+          <div className="relative w-[50vw] h-auto p-2" >
             <h3 className="text-xl">Technologies</h3>
             <div className="grid"></div>
           </div>
-          <div className="w-full h-auto">
+          <div className=" relative w-[50vw] h-auto p-2">
             <h3 className="text-xl">Skills</h3>
             <div className="grid"></div>
           </div>
+          <div className="relative w-[50vw] h-auto p-2">
+            <p>
+              Feel interested? Don't be shy! Drop a message below:
+            </p>
+          </div>
         </section>
-        <section className="leftbx relative w-[50vw] h-screen top-1/56">
+        <section className="rightbx relative w-[50vw] h-screen top-1/56">
           <div className="relative w-[50vw] h-auto">
             <h2 className="relative text-center bottom-1.5">Projects</h2>
           </div>
@@ -50,7 +58,7 @@ export default function Home() {
         </section>
       </main>
       <footer className=" relative w-screen h-screen">
-        <form className="email-card relative w-[50vw] h-auto top-1/4 left-1/4 border-1 border-black rounded-2xl grid">
+        <form className="p-3 email-card relative w-[50vw] h-auto top-1/4 left-1/4 border-1 border-black rounded-2xl grid">
           <label className="relative left-1/16 p-2">Name:</label>
           <input className="relative w-1/4 left-1/8 border-1" type="text" name="name" required></input>
           <label className="relative left-1/16 p-2">E-mail:</label>
@@ -59,8 +67,8 @@ export default function Home() {
           <input className="relative w-1/4 left-1/8 border-1" type="text" name="subject" required></input>
           <label className="relative left-1/16 p-2">Message:</label>
           <textarea className=" relative left-1/8 bottom-1/16 w-[37.5vw] resize-none border-1" name="message" ></textarea>
-          <button type="submit" className="p-2">
-            <label className="border-1 p-1 ">Submit</label>    
+          <button type="submit" className="relative w-1/3 border-1 top-1/6 left-1/3 p-1">
+            <label className=" ">Submit</label>    
           </button>
         </form>
       </footer>

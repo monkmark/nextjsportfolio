@@ -49,9 +49,20 @@ export default function Home() {
           </section>
         </section>
       </main>
-      <footer className=" relative w-screen h-screen border-1 border-black">
-        <div className="email-card relative w-[50vw] h-[50vh] left-1/4 top-1/4 border-1 border-black">
-        </div>
+      <footer className=" relative w-screen h-screen">
+        <form className="email-card relative w-[50vw] h-auto top-1/4 left-1/4 border-1 border-black rounded-2xl grid">
+          <label className="relative left-1/16 p-2">Name:</label>
+          <input className="relative w-1/4 left-1/8 border-1" type="text" name="name" required></input>
+          <label className="relative left-1/16 p-2">E-mail:</label>
+          <input className="relative w-1/4 left-1/8 border-1" type="email" name="email" required></input>
+          <label className="relative left-1/16 p-2">Subject:</label>
+          <input className="relative w-1/4 left-1/8 border-1" type="text" name="subject" required></input>
+          <label className="relative left-1/16 p-2">Message:</label>
+          <textarea className=" relative left-1/8 bottom-1/16 w-[37.5vw] resize-none border-1" name="message" ></textarea>
+          <button type="submit" className="p-2">
+            <label className="border-1 p-1 ">Submit</label>    
+          </button>
+        </form>
       </footer>
     </div>
   );

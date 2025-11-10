@@ -11,6 +11,49 @@
     --foreground: #ededed;
   }
 }
+/* Media Queries */
+@media  (min-width: 320px) {
+  header {
+    font-size: 7.5px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 375px) {
+    header {
+      font-size: 8.5px;
+      font-weight: bold;
+    }
+}
+@media (min-width: 425px) {
+    header {
+      font-size: 10px;
+      font-weight: bold;
+    }
+}
+
+@media  (min-width: 640px) {
+  header {
+    font-size: 10.5px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 768px) {
+    header {
+      font-size: 12px;
+      font-weight: bold;
+    }
+}
+@media (min-width: 1024px) {
+    header {
+      font-size: 14px;
+      font-weight: bold;
+    }
+}
+@media  (min-width: 1280px) {
+  header {
+    font-size: 18px;
+  }
+}
 
 @layer utilities {
   /* Hide scrollbar for Chrome, Safari and Opera */
@@ -31,3 +74,74 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.email {
+  border-style: inset;
+}
+.userinput {
+  border-style: outset;
+}
+.userinput_1 {
+  border-style: groove;
+}
+
+@keyframes load-border {
+  0% {
+    width: 0;
+  }
+  
+  100% {
+    width: 100%;
+  }
+}
+.animate-load-border {
+  animation: load-border 1.4s ease-out forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fadeInanimate {
+  animation: fadeIn 3.5s ease-in;
+}
+@keyframes navbounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}
+.animate-bounce {
+  animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation: "navbounce";
+  animation-duration: 6s;
+}
+.animate-bounce2 {
+  animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation: "navbounce";
+  animation-duration: 6.4s;
+}
+.animate-bounce3 {
+  animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation: "navbounce";
+  animation-duration: 6.8s;
+}
+.animate-bounce4 {
+  animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+  animation: "navbounce";
+  animation-duration:7.2s;
+}

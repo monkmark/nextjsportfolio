@@ -4,22 +4,22 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="relative w-screen h-screen overflow-x-scroll hide-scrollbar"> 
-      <header className="p-1 flex w-screen h-auto justify-around relative text-base border-b-1 border-blue-800">
-        <section className="banner w-1/2 h-auto">
+      <header className="p-2 flex w-screen h-auto justify-around relative text-base border-b-2 border-black animate-load-border">
+        <section className="banner w-1/2 h-auto p-1">
           <h3 className="relative top-1 left-1/64">Marcus Parchman</h3>
         </section>
-        <ul className="relative flex w-1/2 h-auto justify-around top-1 font-Geist, font-Geist-Mono">
-          <li className="no-underline"><a className="text-black" href="https://github.com/monkmark" target="_blank">Github</a></li>
-          <li className="no-underline"><a className="text-black" href="https://www.linkedin.com/in/parchmanmarcus/" target="_blank">LinkedIn</a></li>
-          <li className="no-underline"><a className="text-black" href="resume.pdf" target="_blank">Resume</a></li>
-          <li className="no-underline"><a className="text-black" href="#footer">Contact</a></li>
+        <ul className="relative flex w-1/2 h-auto justify-evenly font-Geist fadeInanimate">
+          <li className="no-underline p-1.5 animate-bounce"><a className="text-black font-Geist-Mono hover:text-lg transition-all duration-200 ease-in-out" href="https://github.com/monkmark" target="_blank">Github</a></li>
+          <li className="no-underline p-1.5 animate-bounce2"><a className="text-black hover:text-lg transition-all duration-200 ease-in-out" href="https://www.linkedin.com/in/parchmanmarcus/" target="_blank">LinkedIn</a></li>
+          <li className="no-underline p-1.5 animate-bounce3"><a className="text-black hover:text-lg transition-all duration-200 ease-in-out" href="resume.pdf" target="_blank">Resume</a></li>
+          <li className="no-underline p-1.5 animate-bounce4"><a className="text-black hover:text-lg transition-all duration-200 ease-in-out" href="#footer">Contact</a></li>
         </ul>
       </header>
       <main className="w-screen h-screen flex">
         <section className="leftbx relative w-[50vw] h-screen">
           <div className="relative w-[50vw] h-auto p-2">
-            <p className="text-3xl relative">Hi, I'm Marcus!</p>
-            <p className="text-2xl relative">I'm a Software Engineer major at Western Governors University</p>
+            <p className="introduction text-3xl relative">Hi, I'm Marcus!</p>
+            <p className="introduction text-2xl relative">I'm a Software Engineer major at Western Governors University</p>
           </div>
           <div className="relative w-[50vw] h-auto p-2">
             <p>I Specialize in Design & Developing software products. Anywhere from fullstack web platforms to object-oriented applications. Feel free to check out my work alongside!</p>
@@ -105,16 +105,16 @@ export default function Home() {
         </section>
       </main>
       <footer className=" relative w-screen h-screen">
-        <form className="p-3 email-card relative w-[50vw] h-auto top-1/4 left-1/4 border-1 border-black rounded-2xl grid">
+        <form className="email p-3 email-card relative w-[50vw] h-auto top-1/4 left-1/4 border-10 border-gray-2xl grid border-inset ">
           <label className="relative left-1/16 p-2">Name:</label>
-          <input className="relative w-1/4 left-1/8 border-1" type="text" name="name" required></input>
+          <input className="userinput_1 relative w-1/4 left-1/8 border-5" type="text" name="name" required></input>
           <label className="relative left-1/16 p-2">E-mail:</label>
-          <input className="relative w-1/4 left-1/8 border-1" type="email" name="email" required></input>
+          <input className="userinput_1 relative w-1/4 left-1/8 border-5" type="email" name="email" required></input>
           <label className="relative left-1/16 p-2">Subject:</label>
-          <input className="relative w-1/4 left-1/8 border-1" type="text" name="subject" required></input>
+          <input className="userinput_1 relative w-1/4 left-1/8 border-5" type="text" name="subject" required></input>
           <label className="relative left-1/16 p-2">Message:</label>
-          <textarea className=" relative left-1/8 bottom-1/16 w-[37.5vw] resize-none border-1" name="message" ></textarea>
-          <button type="submit" className="relative w-1/3 border-1 top-1/6 left-1/3 p-1">
+          <textarea className="userinput_1 relative left-1/8 bottom-1/16 w-[37.5vw] resize-none border-5" name="message" ></textarea>
+          <button type="submit" className=" userinput relative w-1/3 border-6 border-silver top-1/6 left-1/3 p-1">
             <label className=" ">Submit</label>    
           </button>
         </form>

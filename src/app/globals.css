@@ -17,11 +17,23 @@
     font-size: 7.5px;
     font-weight: bold;
   }
+  .introductiontext {
+    font-size: 20px;
+  }
+   .introductiontext2 {
+    font-size: 10px;
+  }
 }
 @media (min-width: 375px) {
     header {
       font-size: 8.5px;
       font-weight: bold;
+    }
+    .introductiontext {
+      font-size: 20px;
+    }
+    .introductiontext2 {
+      font-size: 10px;
     }
 }
 @media (min-width: 425px) {
@@ -29,29 +41,58 @@
       font-size: 10px;
       font-weight: bold;
     }
+    .introductiontext {
+      font-size: 22px;
+    }
+    .introductiontext2 {
+      font-size: 12px;
+    }
 }
-
 @media  (min-width: 640px) {
   header {
     font-size: 10.5px;
     font-weight: bold;
   }
+  .introductiontext {
+    font-size: 24px;
+  }
+  .introductiontext2 {
+    font-size: 14px;
+  }
 }
 @media (min-width: 768px) {
-    header {
-      font-size: 12px;
-      font-weight: bold;
-    }
+  header {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .introductiontext {
+    font-size: 26px;
+  }
+  .introductiontext2 {
+    font-size: 16px;
+  }
 }
 @media (min-width: 1024px) {
-    header {
-      font-size: 14px;
-      font-weight: bold;
-    }
+  header {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .introductiontext {
+    font-size: 28px;
+  }
+  .introductiontext2 {
+    font-size: 18px;
+  }
 }
 @media  (min-width: 1280px) {
   header {
     font-size: 18px;
+  }
+  .introductiontext {
+    font-size: 30px;
+  }
+  .introductiontext2 {
+    font-size: 20px;
   }
 }
 

@@ -4,11 +4,11 @@ import Image from 'next/image';
 export default function Home() {
   return (
     <div className="relative w-screen h-screen overflow-x-scroll hide-scrollbar"> 
-      <header className="p-2 flex w-screen h-auto justify-around relative text-base border-b-2 border-black animate-load-border">
-        <section className="banner w-1/2 h-auto p-1">
-          <h3 className="relative top-1 left-1/64">Marcus Parchman</h3>
+      <header className="flex w-screen h-auto justify-around relative text-base border-b-2 border-black animate-load-border">
+        <section className="banner w-1/2 h-auto">
+          <h3 className="relative top-1 p-1">Marcus Parchman</h3>
         </section>
-        <ul className="relative flex w-1/2 h-auto justify-evenly font-Geist fadeInanimate">
+        <ul className="relative flex w-1/2 h-auto justify-around font-Geist fadeInanimate">
           <li className="no-underline p-1.5 animate-bounce"><a className="text-black font-Geist-Mono hover:text-lg transition-all duration-200 ease-in-out" href="https://github.com/monkmark" target="_blank">Github</a></li>
           <li className="no-underline p-1.5 animate-bounce2"><a className="text-black hover:text-lg transition-all duration-200 ease-in-out" href="https://www.linkedin.com/in/parchmanmarcus/" target="_blank">LinkedIn</a></li>
           <li className="no-underline p-1.5 animate-bounce3"><a className="text-black hover:text-lg transition-all duration-200 ease-in-out" href="resume.pdf" target="_blank">Resume</a></li>
@@ -17,9 +17,9 @@ export default function Home() {
       </header>
       <main className="w-screen h-screen flex">
         <section className="leftbx relative w-[50vw] h-screen">
-          <div className="relative w-[50vw] h-auto p-2">
-            <p className="introduction text-3xl relative">Hi, I'm Marcus!</p>
-            <p className="introduction text-2xl relative">I'm a Software Engineer major at Western Governors University</p>
+          <div className="relative w-[50vw] h-auto">
+            <p className="introductiontext text-3xl relative p-1">Hi, I'm Marcus!</p>
+            <p className="introductiontext2 text-2xl relative text-left p-1">I'm a Software Engineer major at Western Governors University</p>
           </div>
           <div className="relative w-[50vw] h-auto p-2">
             <p>I Specialize in Design & Developing software products. Anywhere from fullstack web platforms to object-oriented applications. Feel free to check out my work alongside!</p>

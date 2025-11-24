@@ -17,58 +17,54 @@ export default function Home() {
       </header>
       <main className="w-screen h-screen flex">
         <section className="leftbx relative w-[50vw] h-screen">
-          <div className="relative w-[50vw] h-auto">
-            <p className="mquerytext text-3xl relative p-1">Hi, I'm Marcus!</p>
-            <p className="mquerytext2 text-2xl relative text-left p-1">I'm a Software Engineer major at Western Governors University</p>
-            <p className='mquerytext2 p-1'>I Specialize in Design & Developing software systems & products. Anywhere from fullstack web platforms to object-oriented applications. Feel free to check out my work alongside!</p>
-          </div>
-          <div className="relative w-[50vw] h-auto p-1">
-            <p>I Specialize in Design & Developing software systems & products. Anywhere from fullstack web platforms to object-oriented applications. Feel free to check out my work alongside!</p>
-          </div>
-          <div className="relative w-[50vw] h-auto p-1" >
-            <h3 className="relative right-1 text-xl text-center">Technologies</h3>
-            <section className="flex relative justify-center text-center border-blue-700 border-1 rounded-xl w-[48vw] h-auto">
-              <Image src="/techicons/next.png" alt="desc" width={100} height={0} className='relative right-0.5 w-[8vw] h-[13vh]'/>
-              <Image src="/techicons/springboot.png" alt="desc" width={80} height={0} className=' relative top-1/3 h-[5vh]'/>
-              <Image src="/techicons/node.png" alt="desc" width={55} height={0} className='relative top-1/4 left-3 h-[7vh]'/>
-              <Image src="/techicons/mongodb.svg" alt="desc" width={100} height={0} className='relative top-1/8 h-[12vh]'/>
-              <Image src="/techicons/sqll.png" alt="desc" width={100} height={0} className='relative top-1/8 w-[5vw] h-[12vh]'/>
-              <Image src="/techicons/unity.png" alt="desc" width={100} height={0} className='relative top-1/8 w-[9vw] h-[12vh]'/>
+          <section className='container1 relative w-[50vw] h-[12vh] '>
+              <p className="mquerytext text-3xl relative">Hi, I'm Marcus!</p>
+              <p className="mquerytext2 text-2xl relative">I'm a Software Engineer major at Western Governors University</p>
+          </section>
+          <section className="container2 relative w-[50vw] h-[60vh]">
+            <section className='relative w-[50vw] h-auto'>
+              <p className='mquerytext2 relative'>I Specialize in Design & Developing software systems & products. Anywhere from fullstack web platforms to object-oriented applications. Feel free to check out my work alongside!</p>
+              <h3 className="mquerytext relative right-1 text-xl text-center">Main Technologies</h3>
+              <div className="flex relative justify-around text-center border-blue-700 border-1 rounded-xl w-[50vw] h-[15vh]">
+                <Image src="/techicons/mongodb.svg" alt="desc" width={100} height={0} className='relative techimgquery'/>
+                <Image src="/techicons/node.png" alt="desc" width={50} height={0} className='relative techimgquery2'/>
+                <Image src="/techicons/next.png" alt="desc" width={100} height={0} className='relative techimgquery'/>
+                <Image src="/techicons/cplus.png" alt="desc" width={100} height={0} className='relative techimgquery3'/>
+                <Image src="/techicons/WebGL.png" alt="desc" width={100} height={0} className='relative techimgquery4'/>
+              </div>
             </section>
-          </div>
-          <div className="relative  w-[50vw] h-auto p-1">
-            <h3 className="text-xl relative right-1 text-center">Skills</h3>
-            <section className="flex justify-between border-blue-700 border-1 rounded-xl w-[48vw] h-auto">
-              <label>Fullstack Development</label>
-              <label>Object-Oriented Programming</label>
-              <label>Signal Processing</label>
-              <label>Database Management</label>
-              <label>Responsive Design</label>
-              <label>Customer Service</label>
+            <section className='relative w-[50vw] h-auto top-2'>
+              <h3 className="mquerytext text-xl relative right-1 text-center">Primary Skills</h3>
+              <div className="flex relative justify-center text-center border-blue-700 border-1 rounded-xl w-[50vw] h-[15vh]">
+                <label className='mquerytext4'>Fullstack Development</label>
+                <label className='mquerytext4'>Object-Oriented Programming</label>
+                <label className='mquerytext4'>Signal Processing</label>
+                <label className='mquerytext4'>Database Management</label>
+                <label className='mquerytext4'>Responsive Design</label>
+                <label className='mquerytext4'>Customer Service</label>
+              </div>
             </section>
-          </div>
-          <div className="relative w-[50vw] h-auto p-1">
-            <p>
-              Feel interested? Don't be shy! Drop a message below:
-            </p>
-          </div>
+          </section>
+          <section className="container3 relative w-[50vw] h-[20vh]">
+            <p className='mquerytext2'>Feel interested? Don't be shy! Drop a message below:</p>
+          </section>
         </section>
         <section className="rightbx relative w-[50vw] h-screen">
           <div className="relative w-[50vw] h-auto">
-            <p className="mquerytext3 relative text-center">Projects</p>
+            <p className="mquerytext relative text-center">Projects</p>
           </div>
           <section className="relative firstrow flex w-[50vw] h-[23vh] justify-around">
               <div className="relative text-center card w-[22vw] h-[20vh] border-1 border-black rounded-2xl">
                 <div className="thumbnail relative flex justify-center w-[21.8vw] h-[13vh] border-b-1">
-                  <Image src="/projecticons/synth.png" alt="Kong" width={100} height={0} className='imgquery relative top-1/10'/>
+                  <Image src="/projecticons/synth.png" alt="Kong" width={100} height={0} className='imgquery relative top-1/12'/>
                 </div>
-                <a className='mquerytext4 relative' href='#' target='_blank'>Kong1 Mobile Synth</a>
+                <a className='mquerytext4 relative' href='#' target='_blank'>Kong1 Synth</a>
               </div>
               <div className="relative text-center card w-[22vw] h-[20vh] border-1 border-black rounded-2xl">
                 <div className="thumbnail relative flex justify-center w-[21.8vw] h-[13vh] border-b-1">
                   <Image src="/projecticons/input.png" alt="user-entry" width={65} height={0} className='imgquery2 relative h-[10vh] top-1/6'/>
                 </div>
-                <a className='mquerytext4 relative' href='#' target='_blank'>User-Entry Assistant</a>
+                <a className='mquerytext4 relative' href='#' target='_blank'>User-Input Client</a>
               </div>
           </section>
           <section className="relative secondrow flex w-[50vw] h-[23vh] justify-around ">
@@ -76,7 +72,7 @@ export default function Home() {
                 <div className="thumbnail relative flex justify-center thumbnail w-[21.8vw] h-[13vh] border-b-1">
                   <Image src="/projecticons/arrow.jpg" alt="STEPPER" width={55} height={0} className='imgquery3 relative top-1/4 h-[8vh]'/>
                 </div> 
-                <a className='mquerytext4 relative' href='#' target='_blank'>Stepper Mobile Dance (Beta)</a>
+                <a className='mquerytext4 relative' href='#' target='_blank'>Stepper Mobile</a>
               </div>
               <div className=" card relative text-center w-[22vw] h-[20vh] border-1 border-black rounded-2xl">
                 <div className="thumbnail relative w-[21.8vw] h-[13vh] border-b-1"></div>
